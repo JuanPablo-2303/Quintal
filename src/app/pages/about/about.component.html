@@ -1,0 +1,10 @@
+<h1>Nombres, correos y descripcion</h1>
+    <ul class="list-group">
+        <li *ngFor="let mensaje of mensajes | async" class="list-group-item">
+            <h2>{{ mensaje.name }}</h2>
+            <h4>{{ mensaje.email}}</h4>
+            <p>
+                {{ mensaje.body }}
+            </p>
+        </li>
+    </ul>
