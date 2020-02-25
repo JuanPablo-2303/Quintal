@@ -7,14 +7,15 @@ import { DataService } from '../../service/data.service';
   styleUrls: ['./post.component.css']
 })
 export class PostComponent implements OnInit {
+mensajes: any;
 
-
-  constructor() { }
+  constructor(private dataService: DataService) { }
 
   ngOnInit() {
+    this.mensajes = this.dataService.getPost();
   }
-  /*escucharClick(id: number){
-    console.log('Estas pushando id: ',id);
-  }*/
+  escucharClick(id: number){
+    console.log('Estas dando click en el ID: ',id);
+  }
 
 }

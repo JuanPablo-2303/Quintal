@@ -1,6 +1,9 @@
+<h1>POST</h1>
+
 <ul class="list-group">
-        <app-posts *ngFor = "let mensaje of mensajes | async"
+
+    <app-posts *ngFor="let mensaje of mensajes | async" 
             [mensaje]="mensaje"
-            (clickPost)="escucharClick($event)">
-        </app-posts>
+            (clickPosts)="escucharClick( $event )"> </app-posts>
+
 </ul>

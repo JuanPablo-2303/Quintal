@@ -8,17 +8,17 @@ import { Component, OnInit } from '@angular/core';
 export class MenuComponent implements OnInit {
   rutas = [
     {
-      name: 'Google',
+      name: 'Youtube',
       path: '/home'
     },
     {
-      name: 'Nombres y correo',
-      path: '/about'
-    },
-    {
-      name: 'Nombre',
+      name: 'Imagenes',
       path: '/contact'
     },
+    {
+      name: 'Nombres',
+      path: '/post'
+    }
   ];
 
   constructor() { }

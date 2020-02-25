@@ -12,7 +12,7 @@ export class AboutComponent implements OnInit {
   constructor(private dataService: DataService) { }
 
   ngOnInit() {
-    this.mensajes = this.dataService.getAbout();
+    this.mensajes = this.dataService.getContact();
 
     //this.dataService.getAbout()
       //.subscribe( (about: any[]) => {

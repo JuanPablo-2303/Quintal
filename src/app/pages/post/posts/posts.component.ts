@@ -10,13 +10,14 @@ import { every } from 'rxjs/operators';
 export class PostsComponent implements OnInit {
 
 @Input() mensaje: any;
-@Output() cickPost = new EventEmitter<number>();
+
+@Output() clickPosts = new EventEmitter<number>();
 
   constructor() { }
 
   ngOnInit() {
   }
   onClick(){
-    this.cickPost.emit(this.mensaje.id);
+    this.clickPosts.emit(this.mensaje.id);
   }
 }

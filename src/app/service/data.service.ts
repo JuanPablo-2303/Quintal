@@ -29,4 +29,12 @@ export class DataService {
       })
     );
   }
+  getPost() {
+    return this.http.get('https://jsonplaceholder.typicode.com/posts')
+    .pipe(
+      tap(post => {
+        console.log(post);
+      })
+    );
+  }
 }
